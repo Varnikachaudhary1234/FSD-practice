@@ -1,24 +1,14 @@
-const printMessage = (msg)=>{
-    console.log(msg);
-}
-const bookTicket = ()=>{
-    printMessage("Welcome!");
-    setTimeout(()=>{
-        printMessage("login succesfully");
-        setTimeout(()=>{
-            printMessage("seat has been selected successfully.");
-            setTimeout(()=>{
-                printMessage("your seat had been confirmed .proceed for payment.");
-                setTimeout(()=>{
-                    printMessage("payment has been done");
-                    setTimeout(()=>{
-                        printMessage("ticket has been issued");
-                        printMessage("Thanku for visiting our site.");
-                    },3000)
-                },4000)
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Header from './Header';
+import App from './App';
 
-            },3000)
-        },2000)
 
-    },3000)
-}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Header></Header>
+    <App />
+  </React.StrictMode>
+);
+
